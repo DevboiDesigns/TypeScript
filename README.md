@@ -41,7 +41,7 @@
 }
 ```
 
-## Syntax
+# Syntax
 
 - basically the same as `JS`
 - only one Numnber type
