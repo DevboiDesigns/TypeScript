@@ -166,3 +166,20 @@ mixedArray.push(false);
 ```ts
 let ninja: { name: any; age: any };
 ```
+
+## Workflow - tsconfig
+
+- `tsc -init`
+- set root directory in [tsconfig.json](tsconfig.json) `"rootDir": "./src"`
+- set out directory in [tsconfig.json](tsconfig.json) `"outDir": "./public"`
+
+**watch **ALL** files**
+
+`tsc -w`
+
+- if added to very end of `tsconfig` file, will only compile `TS` files found in src folder
+
+```json
+},
+  "include": ["src"]
+```
