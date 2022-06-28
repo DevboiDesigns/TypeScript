@@ -21,3 +21,28 @@
 **run compiler on watched changes for set file**
 
 `tsc nameOfFile.ts -w`
+
+## Syntax
+
+- basically the same as `JS`
+- only one Numnber type
+- types can not change
+- uses type inference (assumes type)
+- has access to all methods that `JS` has
+
+**defining types**
+
+- similar to `Swift`
+- `diameter: number`
+
+1.  `number`
+2.  `string`
+3.  `boolean`
+
+```ts
+const circ = (diameter: number) => {
+  return diameter * Math.PI;
+};
+
+console.log(circ(7.5));
+```
