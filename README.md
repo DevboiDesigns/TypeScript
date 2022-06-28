@@ -137,3 +137,32 @@ let ninjaTwo: {
   beltColor: string;
 };
 ```
+
+### Dynamic Types (any)
+
+- type `any`
+- reverts TypeScript back to JavaScript
+- think twice before using
+
+```ts
+let age: any = 25;
+age = "String";
+age = true;
+
+age = { name: "Tim" };
+```
+
+**Arrays**
+
+```ts
+let mixedArray: any[] = [];
+mixedArray.push("Masrio");
+mixedArray.push(34);
+mixedArray.push(false);
+```
+
+**Objects**
+
+```ts
+let ninja: { name: any; age: any };
+```
