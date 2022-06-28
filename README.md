@@ -82,3 +82,58 @@ ninja = {
   age: 40,
 };
 ```
+
+### Explicit Types
+
+- defining types
+
+```ts
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+```
+
+**Arrays**
+
+```ts
+let ninjas: string[];
+let cooks: boolean[];
+
+// ------------------------ Initializing arrays
+let friends: number[] = [];
+
+friends.push(4);
+```
+
+**Union Types**
+
+```ts
+let mixedArray: (string | number | boolean)[] = [];
+```
+
+```ts
+let uid: string | number;
+uid = "John";
+uid = 123;
+```
+
+**Objects**
+
+```ts
+let ninjaOne: object;
+ninjaOne = { name: "Bob", age: 30 };
+// can be re-assigned as Array
+ninjaOne = [];
+```
+
+**other method / more secure**
+
+- same as `Swift`
+
+```ts
+let ninjaTwo: {
+  name: string;
+  age: number;
+  beltColor: string;
+};
+```
