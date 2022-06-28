@@ -1,12 +1,12 @@
-let age: any = 25;
-age = "String";
-age = true;
+let ageAga: any = 25;
+ageAga = "String";
+ageAga = true;
 
-age = { name: "Tim" };
+ageAga = { name: "Tim" };
 
-let mixedArray: any[] = [];
-mixedArray.push("Masrio");
-mixedArray.push(34);
-mixedArray.push(false);
+let mixedArrayAgai: any[] = [];
+mixedArrayAgai.push("Masrio");
+mixedArrayAgai.push(34);
+mixedArrayAgai.push(false);
 
 let ninja: { name: any; age: any };
