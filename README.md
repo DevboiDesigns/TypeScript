@@ -23,6 +23,24 @@
 
 `tsc nameOfFile.ts -w`
 
+## Workflow - tsconfig
+
+- `tsc -init`
+- set root directory in [tsconfig.json](tsconfig.json) `"rootDir": "./src"`
+- set out directory in [tsconfig.json](tsconfig.json) `"outDir": "./public"`
+
+**watch **ALL** files**
+
+`tsc -w`
+
+- if added to very end of `tsconfig` file, will only compile `TS` files found in src folder
+
+```json
+  },
+    "include": ["src"]
+}
+```
+
 ## Syntax
 
 - basically the same as `JS`
@@ -222,22 +240,4 @@ let result = minus(3, 5);
 const minus = (a: number, b: number): number => {
   return a - b;
 };
-```
-
-## Workflow - tsconfig
-
-- `tsc -init`
-- set root directory in [tsconfig.json](tsconfig.json) `"rootDir": "./src"`
-- set out directory in [tsconfig.json](tsconfig.json) `"outDir": "./public"`
-
-**watch **ALL** files**
-
-`tsc -w`
-
-- if added to very end of `tsconfig` file, will only compile `TS` files found in src folder
-
-```json
-  },
-    "include": ["src"]
-}
 ```
