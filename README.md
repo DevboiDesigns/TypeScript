@@ -167,6 +167,63 @@ mixedArray.push(false);
 let ninja: { name: any; age: any };
 ```
 
+### Functions
+
+- Defining Function types
+
+```ts
+let greet: Function;
+
+greet = () => {
+  console.log("Hello World");
+};
+```
+
+#### Optionals
+
+- optionals and defaults should always be at the end of parameters
+
+- `?` at end of parameter name
+
+```ts
+const add = (a: number, b: number, c?: number | string) => {
+  console.log(a + b);
+};
+
+add(5, 10);
+```
+
+**Default Param**
+
+```ts
+const add = (a: number, b: number, c: number | string = 10) => {
+  console.log(a + b);
+  console.log(c);
+};
+
+// returns type (void)
+add(5, 10);
+```
+
+**Type Inference**
+
+```ts
+const minus = (a: number, b: number) => {
+  return a - b;
+};
+
+// variable will become the type that is returned from function
+let result = minus(3, 5);
+```
+
+**can explicitly define return type**
+
+```ts
+const minus = (a: number, b: number): number => {
+  return a - b;
+};
+```
+
 ## Workflow - tsconfig
 
 - `tsc -init`
