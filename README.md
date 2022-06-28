@@ -5,6 +5,7 @@
 - Allows us to use strict types
 - Supports modern features (arrow functions, let, const)
 - Extra features (generics, interfaces, tuples, etc)
+- cleaner & more predictable
 
 **Install**
 
@@ -45,4 +46,39 @@ const circ = (diameter: number) => {
 };
 
 console.log(circ(7.5));
+```
+
+### Mixed Arrays
+
+- can contain mixed arrays if defined that way
+
+```ts
+let mixed = ["ken", 4, "chun li", 8, 9, false];
+mixed.push("ryan");
+mixed.push(true);
+mixed[0] = 35;
+```
+
+### Objects
+
+- properties can not change types
+
+```ts
+let ninja = {
+  name: "Steve",
+  belt: "black",
+  age: 30,
+};
+```
+
+- can re-assign object but **all** properties must match
+- same as `Swift`
+- can not add a new properties to initial structure
+
+```ts
+ninja = {
+  name: "John",
+  belt: "orange",
+  age: 40,
+};
 ```
