@@ -180,6 +180,7 @@ let ninja: { name: any; age: any };
 - if added to very end of `tsconfig` file, will only compile `TS` files found in src folder
 
 ```json
-},
-  "include": ["src"]
+  },
+    "include": ["src"]
+}
 ```
