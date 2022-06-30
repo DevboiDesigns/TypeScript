@@ -1,3 +1,5 @@
+**work in progress**
+
 # TypeScript 101
 
 - Alternative to JavaScript (superset - extends language)
