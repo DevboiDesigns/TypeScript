@@ -66,7 +66,7 @@ const circ = (diameter: number) => {
 console.log(circ(7.5));
 ```
 
-### Mixed Arrays
+## Mixed Arrays
 
 - can contain mixed arrays if defined that way
 
@@ -77,7 +77,7 @@ mixed.push(true);
 mixed[0] = 35;
 ```
 
-### Objects
+## Objects
 
 - properties can not change types
 
@@ -101,7 +101,7 @@ ninja = {
 };
 ```
 
-### Explicit Types
+## Explicit Types
 
 - defining types
 
@@ -156,7 +156,7 @@ let ninjaTwo: {
 };
 ```
 
-### Dynamic Types (any)
+## Dynamic Types (any)
 
 - type `any`
 - reverts TypeScript back to JavaScript
@@ -185,7 +185,7 @@ mixedArray.push(false);
 let ninja: { name: any; age: any };
 ```
 
-### Functions
+## Functions
 
 - Defining Function types
 
@@ -197,7 +197,7 @@ greet = () => {
 };
 ```
 
-#### Optionals
+## Optionals
 
 - optionals and defaults should always be at the end of parameters
 
@@ -239,5 +239,20 @@ let result = minus(3, 5);
 ```ts
 const minus = (a: number, b: number): number => {
   return a - b;
+};
+```
+
+## Type-Alias
+
+```ts
+type StringOrNum = string | number;
+type UserType = { name: string; uid: string | number };
+
+const logDetails = (uid: StringOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
+};
+
+const greet = (user: UserType) => {
+  console.log(`${user} says hello`);
 };
 ```
